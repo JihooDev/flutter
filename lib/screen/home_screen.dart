@@ -13,10 +13,10 @@ class HomeScreen extends StatelessWidget {
       body: SafeArea(
         child: Container(
           // 기기의 너비만큼 꽉 채움
-          width: MediaQuery.of(context).size.width,
+          // width: MediaQuery.of(context).size.width,
 
           color: Colors.black,
-          child: Column(
+          child: Row(
             // MainAxisAlignment === justifyContent
             // start - 시작
             // end - 끝
@@ -30,6 +30,12 @@ class HomeScreen extends StatelessWidget {
             // MainAxisAlignment의 반대축을 조작한다.
             // 기능은 동일하며 stretch 는 화면의 너비만큼 꽉 채운다.
             crossAxisAlignment: CrossAxisAlignment.start,
+
+            // mainAxisSize - 주축 크기
+            // max (default) - 최대
+            // min - 최소
+            mainAxisSize: MainAxisSize.min,
+
             children: [
               Container(
                 width: 50,
