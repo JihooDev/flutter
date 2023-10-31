@@ -12,16 +12,24 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Container(
+          // 기기의 너비만큼 꽉 채움
+          width: MediaQuery.of(context).size.width,
+
           color: Colors.black,
-          child: Row(
-            // MainAxisAlignment
+          child: Column(
+            // MainAxisAlignment === justifyContent
             // start - 시작
             // end - 끝
             // center - 가운데
             // spaceBetween = 위젯과 위젯의 사이가 동일하게 배치됨
             // spaceEvenly = 위젯을 동일한 간격으로 유지하지만 양쪽 끝에 여백을 생성한 채로 배치
             // spaceAround = spaceEvenly와 동일하지만 양쪽 끝 간격은 1/2
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.start,
+
+            // CrossAxisAlignment === alignItems
+            // MainAxisAlignment의 반대축을 조작한다.
+            // 기능은 동일하며 stretch 는 화면의 너비만큼 꽉 채운다.
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 width: 50,
