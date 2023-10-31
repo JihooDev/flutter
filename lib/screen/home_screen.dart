@@ -11,11 +11,17 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        bottom: false, // 밑의 간격을 없앨 것 인지
-        top: false, // 위의 간격을 없앨 것 인지
         child: Container(
           color: Colors.black,
-          child: Column(
+          child: Row(
+            // MainAxisAlignment
+            // start - 시작
+            // end - 끝
+            // center - 가운데
+            // spaceBetween = 위젯과 위젯의 사이가 동일하게 배치됨
+            // spaceEvenly = 위젯을 동일한 간격으로 유지하지만 양쪽 끝에 여백을 생성한 채로 배치
+            // spaceAround = spaceEvenly와 동일하지만 양쪽 끝 간격은 1/2
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
                 width: 50,
