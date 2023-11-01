@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluuteer/screen/AxisAlignment.dart';
 import 'package:fluuteer/screen/Expanded.dart';
+import 'package:fluuteer/screen/Flexible.dart';
 
 // * 1 스플래시 화면 구현
 
@@ -51,6 +52,6 @@ import 'package:fluuteer/screen/Expanded.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: UsingExpanded(),
+    home: UsingFlexible(),
   ));
 }
