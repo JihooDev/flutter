@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 // Alt + C = Wrap Container
 
-class HomeScreen extends StatelessWidget {
+class Align extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
